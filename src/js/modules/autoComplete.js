@@ -21,7 +21,7 @@ function autoCompleteFunc() {
       },
     },
     resultsList: {
-      maxResults: 10,
+      maxResults: 5,
     },
     searchEngine: "strict",
   });
