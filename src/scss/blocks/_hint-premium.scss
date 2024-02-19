@@ -1,0 +1,25 @@
+.hint-premium {
+    display: grid;
+    gap: 16px;
+
+    border-radius: 12px;
+    padding: 12px;
+    max-width: 224px;
+
+    box-shadow: 0 4px 32px 0 rgba(50, 75, 104, 0.17);
+    background-color: var(--page-bg);
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.hint-premium__text {
+    font-weight: 450;
+
+    span{
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--accent);
+    }
+}

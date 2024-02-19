@@ -1,0 +1,25 @@
+.btn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #b7b7b7;
+    border-radius: 8px;
+    padding: 8px 20px;
+    
+    color: #454545;
+    height: 40px;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 150%;
+
+    transition: background-color 0.2s ease-in;
+
+
+    &:hover{
+        outline: none;
+        background-color: rgba(24, 24, 24, 0.3);
+        color: #fff;
+    }
+}
+

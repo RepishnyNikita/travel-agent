@@ -1,0 +1,148 @@
+.premium {
+    padding: 60px 0;
+
+    @include tablet {
+        padding: 30px 0;
+    }
+}
+
+.premium__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+
+    @include tablet {
+        grid-template-columns:1fr;
+        row-gap: 30px;
+    }
+}
+
+.premium__col {
+    padding: 6px 0;
+
+    @include mobile {
+        display: grid;
+    }
+}
+
+.premium__col-text {
+    display: grid;
+    gap: 24px;
+}
+
+.premium__col-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: capitalize;
+
+    @include tablet{
+        text-align: center;
+    }
+
+    @include mobile{
+        font-size: 30px;
+    }
+
+    @include mobileXS{
+        font-size: 24px;
+        text-align: unset;
+    }
+}   
+
+.premium__col-subtitle {
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--text-muted);
+
+    margin-bottom: 32px; //!
+
+    @include mobileXS{
+        font-size: 14px;
+    }
+}
+
+.premium__col-desc {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px 24px;
+
+    @include tablet {
+        grid-template-columns:repeat(auto-fit ,minmax(225px,1fr));
+        row-gap: 24px;
+    }
+
+    @include mobileS {
+        grid-template-columns:1fr;
+    }
+}
+
+.premium__col-desc__title{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 4px;
+}
+
+.premium__col-desc__text {
+    padding-left: 32px;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 150%;
+    color:var(--text-muted);
+    max-width: 250px;
+
+    @include mobile {
+        max-width: unset;
+    }
+
+    @include mobileXS{
+        font-size: 14px;
+    }
+}
+
+.premium__col-picture {
+    display: grid;
+    gap: 24px;
+    justify-self: end;
+    align-self: start;
+
+    position: relative;
+
+    @include tablet {
+        justify-self: center;
+    }
+}
+
+.premium__col-picture__hint{
+    position: absolute;
+    top: 96px;
+    left: -58px;
+
+    z-index: 99;
+
+    @include laptop {
+        top: 68px;
+        left: -50px;
+    }
+}
+
+.premium__col-picture__img{
+    border-radius: 18px;
+}
+
+.premium__col-picture__row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+
+    img{
+        border-radius: 16px;
+    }
+
+}

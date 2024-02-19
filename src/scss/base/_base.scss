@@ -1,0 +1,82 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+    font-family: var(--font-main);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x:hidden ;
+}
+
+img{
+	display: block;
+}
+
+.title-1 {
+	font-weight: 700;
+	font-size: 72px;
+
+	&--decor{
+		position: relative;
+	}
+
+	&--decor::after{
+		content: "";
+
+		position: absolute;
+		left: 0px;
+		bottom: 4px;
+		width: 268px;
+		height: 24px;
+		z-index: -1;
+
+		background-image: url(./../img/icon/underline.svg);
+		background-repeat: no-repeat;
+
+		@include mobile {
+			width: 184px;
+			height: 18px;
+			background-size: contain;
+		}
+	}
+
+	@include tablet {
+		font-size: 52px;
+	}
+
+	@include mobile {
+		font-size: 32px;
+	}
+
+	@include mobileXS {
+		font-size: 24px;
+	}
+}
+
+.title-3{
+	font-weight: 500;
+	font-size: 36px;
+
+	@include mobile {
+		font-size: 28px;
+	}
+}
+
+
+.text {
+	font-weight: 450;
+	font-size: 18px;
+	line-height: 150%;
+	color: var(--text-muted);
+
+	@include mobile{
+		font-size: 16px;
+	}
+}
+
+.muted{
+	color:var(--text-muted);
+}

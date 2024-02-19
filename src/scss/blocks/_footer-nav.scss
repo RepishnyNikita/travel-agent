@@ -1,0 +1,24 @@
+.foooter-nav {
+    display: grid;
+    gap: 24px;
+
+    @include mobile {
+		gap: 15px;
+	}
+}
+
+.foooter-nav__title {
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.foooter-nav__list {
+	
+    li{
+        padding: 8px 0;
+
+        @include mobile {
+            padding: 4px 0;
+        }
+    }
+}

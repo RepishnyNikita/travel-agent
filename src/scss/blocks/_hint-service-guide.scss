@@ -1,0 +1,30 @@
+.service-guide {
+    display: flex;
+    gap: 12px;
+    border-radius: 82px;
+    padding: 12px;
+    max-width:240px;
+
+    box-shadow: 0 4px 34px 0 rgba(50, 75, 104, 0.17);
+    background-color: var(--page-bg);
+}
+.service-guide__avatar {
+    border-radius: 100px;  //! подставить другую фотку
+}
+
+.service-guide__text {
+    display: grid;
+    line-height: 150%;
+}
+
+.service-guide__name {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.service-guide__decs {
+    align-self: end;
+    font-weight: 450;
+    font-size: 14px;
+    color:var(--text-muted);
+}

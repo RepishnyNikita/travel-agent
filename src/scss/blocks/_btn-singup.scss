@@ -1,0 +1,25 @@
+.btn-singup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+
+    border-radius: 8px;
+    padding: 8px 20px;
+    background-color: #181818;
+    height: 40px;
+
+    color: #fff;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 150%;
+
+    transition: background-color 0.2s ease-in;
+
+
+    &:hover{
+        background-color: rgba(24, 24, 24, 0.2);
+    }
+}
+
+

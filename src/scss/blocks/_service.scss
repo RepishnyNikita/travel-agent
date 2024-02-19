@@ -1,0 +1,125 @@
+.servise {
+    padding: clamp(30px, 0.011rem + 9.32vw, 112px) 0;
+}
+
+.servise__row {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 80px;
+    align-items: center;
+
+    @include laptop{
+        column-gap: 60px;
+        padding-left: 20px;
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        padding-left: unset;
+    }
+}
+
+.servise__picture{
+    position: relative;
+
+    @include mobile {
+        justify-self: center;
+    }
+}
+
+.servise__picture-hint{
+    position: absolute;
+    top: 43px;
+    right: -40px;
+
+    @include tablet {
+        top: -25px;
+        right: -30px;
+    }
+    @include mobile {
+        right: -10px;
+    }
+
+    @include mobileXS {
+        display: none;
+    }
+}
+
+.servise__picture-hint__guide{
+    position: absolute;
+    left: -32px;
+    bottom: 8rem;
+
+    @include tablet {
+        bottom: -2rem;
+    }
+
+    @include mobile {
+        bottom: -1rem;
+        left: -12px;
+    }
+}
+
+.servise__picture-img {
+    border-radius:22px;
+}
+
+.servise__desc {
+    display: grid;
+    gap: 24px;
+
+    @include mobile {
+        grid-row-start: 1;
+    }
+
+    @include mobileXS {
+       gap: 10px;
+    }
+}
+
+.servise__desc-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: capitalize;
+    
+    @include tablet{
+        font-size: 35px;
+    }
+
+    @include mobileXS{
+        font-size: 30px;
+    }
+}
+
+.servise__desc-text {
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--text-muted);
+}
+
+.servise__desc-reveal{
+    display: flex;
+}
+
+.servise__desc-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    padding: 12px 24px;
+    height: 48px;
+    background-color: var(--accent);
+    color: var(--text-white);
+
+    transition: 0.2s ease-in;
+
+    &:hover{
+        outline: 1px solid var(--text-muted);
+        background-color: transparent;
+        color: var(--text-muted);
+    }
+}

@@ -1,0 +1,53 @@
+.popular {
+    padding: 60px 0;
+
+    @include mobile {
+        padding: 30px 0;
+    }
+    
+    @include mobileS {
+        padding: 15px 0;
+    }
+}
+
+.popular__top {
+    margin-bottom: 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    @include mobileS{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.popular__title{
+    display: grid;
+    gap: 16px;
+
+    @include mobileS {
+        gap: 8px;
+    }
+}
+
+.popular__controls{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    button{
+        &:hover,
+        &:active,
+        &:focus-visible{
+            opacity: 0.6;
+            scale: 1.05;
+        }
+    }
+}
+
+
+
