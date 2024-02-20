@@ -1,5 +1,9 @@
 .discover {
     padding: 60px 0;
+
+    @include mobileS {
+        padding-top: 30px;
+    }
 }
 
 .discover__grid {
